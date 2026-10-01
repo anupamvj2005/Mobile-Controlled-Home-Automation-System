@@ -150,8 +150,8 @@ The 4-channel relay module allows multiple electrical loads to be controlled ind
 |---|---|
 | **CH1** | Lamp |
 | **CH2** | Fan |
-| **CH3** | Additional Appliance |
-| **CH4** | Additional Appliance |
+| **CH3** | Light |
+| **CH4** | Switch Board |
 
 The unused relay channels can be used to expand the system with additional appliances.
 
