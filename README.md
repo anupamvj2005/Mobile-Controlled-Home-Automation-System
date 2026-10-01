@@ -347,4 +347,3 @@ You may use and modify the project for learning and academic purposes with appro
 ---
 
 ⭐ **If you find this project useful, consider giving the repository a star!**
-```
