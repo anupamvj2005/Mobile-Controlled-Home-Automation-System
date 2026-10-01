@@ -1,40 +1,29 @@
-Absolutely. Below is the **complete `README.md` code**, from the exact project title through the license section, with a clean GitHub design and only the required information.
-
-```markdown
 # 🏠 Mobile-Controlled Home Automation System
 
-<p align="center">
-  <img src="images/1.jpg" alt="Mobile-Controlled Home Automation System" width="750">
-</p>
+> An embedded home automation system using **Arduino Nano, HC-05 Bluetooth, PIR motion sensor, and a 4-channel relay module** to control household appliances wirelessly through a mobile device.
 
 <p align="center">
-  <b>Arduino Nano • HC-05 Bluetooth • PIR Sensor • 4-Channel Relay</b>
+  <img src="images/1.jpg" alt="Mobile Controlled Home Automation System" width="700">
 </p>
 
----
+## 📋 Project Overview
 
-## 📌 Project Overview
+This project demonstrates a practical **Embedded Systems and Home Automation** system in which electrical appliances can be controlled wirelessly using a mobile device.
 
-The **Mobile-Controlled Home Automation System** is an embedded home automation project designed to control electrical appliances wirelessly using a **mobile phone and Bluetooth communication**.
+The system uses an **Arduino Nano** as the main controller. An **HC-05 Bluetooth module** receives commands from the mobile device, while a **4-channel relay module** switches connected appliances such as a lamp and fan.
 
-The system uses an **Arduino Nano** as the main controller, an **HC-05 Bluetooth module** for wireless communication, a **PIR motion sensor** for motion detection, and a **4-channel relay module** for controlling appliances such as a lamp and fan.
+A **PIR motion sensor** is also included for motion detection and can be used for automatic control or future security features.
 
-The project demonstrates the integration of **microcontrollers, wireless communication, sensors, and relay-based control** in a practical home automation application.
-
----
-
-## ✨ Features
+## ✨ Key Features
 
 - 📱 Mobile-based appliance control
 - 🔵 Bluetooth communication using HC-05
-- ⚙️ Arduino Nano based control
 - 💡 Lamp ON/OFF control
 - 🌀 Fan ON/OFF control
 - 🚨 PIR-based motion detection
-- 🔌 4-channel relay for multiple appliances
+- 🔌 4-channel relay-based appliance switching
+- ⚙️ Arduino Nano embedded control
 - 🏠 Expandable home automation system
-
----
 
 ## 🧩 Hardware Components
 
@@ -42,53 +31,47 @@ The project demonstrates the integration of **microcontrollers, wireless communi
 |---|---|
 | **Arduino Nano** | Main microcontroller |
 | **HC-05 Bluetooth Module** | Wireless communication with mobile |
-| **PIR Motion Sensor** | Motion detection |
-| **4-Channel Relay Module** | Appliance switching |
-| **Lamp** | Controlled appliance |
-| **Fan** | Controlled appliance |
-| **AC/DC Power Supply** | Provides required power |
+| **PIR Motion Sensor** | Detects human motion |
+| **4-Channel Relay Module** | Controls electrical appliances |
+| **Lamp** | Demonstration appliance |
+| **Fan** | Demonstration appliance |
+| **AC/DC Power Supply** | Provides required DC power |
 | **Switch/Socket Board** | Appliance connection |
 | **Jumper Wires** | Circuit connections |
-
----
 
 ## 🔧 System Architecture
 
 ```text
-                ┌──────────────────────┐
-                │     Mobile Phone     │
-                │   Control Interface  │
-                └──────────┬───────────┘
-                           │
-                      Bluetooth
-                           │
-                           ▼
-                   ┌───────────────┐
-                   │     HC-05     │
-                   │   Bluetooth   │
-                   └───────┬───────┘
-                           │
-                          UART
-                           │
-                           ▼
-                   ┌───────────────┐
-                   │  Arduino Nano │
-                   │ Main Controller│
-                   └───────┬───────┘
-                           │
-              ┌────────────┴────────────┐
-              │                         │
-              ▼                         ▼
-       ┌─────────────┐          ┌──────────────┐
-       │ PIR Sensor  │          │ 4-CH Relay   │
-       │   Motion    │          │    Module    │
-       └─────────────┘          └──────┬───────┘
-                                       │
-                              ┌────────┼────────┐
-                              ▼        ▼        ▼
-                            Lamp      Fan    Other Loads
-```
-
+             ┌─────────────────────┐
+             │    Mobile Phone     │
+             │  Control Interface  │
+             └──────────┬──────────┘
+                        │
+                   Bluetooth
+                        │
+                        ▼
+                ┌───────────────┐
+                │     HC-05     │
+                │   Bluetooth   │
+                └───────┬───────┘
+                        │ UART
+                        ▼
+                ┌───────────────┐
+                │ Arduino Nano  │
+                │ Main Controller│
+                └───────┬───────┘
+                        │
+             ┌──────────┴──────────┐
+             │                     │
+             ▼                     ▼
+      ┌─────────────┐       ┌──────────────┐
+      │ PIR Sensor  │       │ 4-CH Relay   │
+      │   Motion    │       │    Module    │
+      └─────────────┘       └──────┬───────┘
+                                   │
+                         ┌─────────┼─────────┐
+                         ▼         ▼         ▼
+                       Lamp       Fan    Other Loads
 ---
 
 ## 🔄 Working Principle
