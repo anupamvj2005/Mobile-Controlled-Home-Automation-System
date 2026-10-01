@@ -72,6 +72,7 @@ A **PIR motion sensor** is also included for motion detection and can be used fo
                          ┌─────────┼─────────┐
                          ▼         ▼         ▼
                        Lamp       Fan    Other Loads
+```
 ---
 
 ## 🔄 Working Principle
