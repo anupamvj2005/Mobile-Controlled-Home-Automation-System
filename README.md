@@ -3,7 +3,7 @@
 > An embedded home automation system using **Arduino Nano, HC-05 Bluetooth, PIR motion sensor, and a 4-channel relay module** to control household appliances wirelessly through a mobile device.
 
 <p align="center">
-  <img src="images/1.jpg" alt="Mobile Controlled Home Automation System" width="700">
+  <img src="images/1.jpeg" alt="Mobile Controlled Home Automation System" width="700">
 </p>
 
 ## 📋 Project Overview
